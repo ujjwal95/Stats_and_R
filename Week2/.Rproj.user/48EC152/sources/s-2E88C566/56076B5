@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1509281797976.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1824219336",
+    "id" : "56076B5",
+    "lastKnownWriteTime" : 1509297252,
+    "last_content_update" : 1509297252721,
+    "path" : "~/Documents/Stats_and_R/Week2/Week2.R",
+    "project_path" : "Week2.R",
+    "properties" : {
+        "cursorPosition" : "32,0",
+        "scrollLine" : "8",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

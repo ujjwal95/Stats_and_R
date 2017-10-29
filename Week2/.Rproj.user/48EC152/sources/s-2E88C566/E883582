@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1509288671895.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E883582",
+    "lastKnownWriteTime" : 1509296582,
+    "last_content_update" : 1509296582742,
+    "path" : "~/Documents/Stats_and_R/Week2/NullDistributionsExcercise.R",
+    "project_path" : "NullDistributionsExcercise.R",
+    "properties" : {
+        "cursorPosition" : "27,18",
+        "scrollLine" : "15",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1509278044847.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1837850729",
+    "id" : "E4DA803F",
+    "lastKnownWriteTime" : 1509278976,
+    "last_content_update" : 1509278976866,
+    "path" : "~/Documents/Stats_and_R/Week1/dplyrExercise.R",
+    "project_path" : "dplyrExercise.R",
+    "properties" : {
+        "cursorPosition" : "23,0",
+        "scrollLine" : "1",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
