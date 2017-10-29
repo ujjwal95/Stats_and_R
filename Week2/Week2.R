@@ -30,3 +30,4 @@ p_value <- sum(null_values > obs)/n
 #p_value <- sum(abs(null_values) > obs)/n
 show(p_value)
 #probability distributions
+#normal distributions
