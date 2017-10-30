@@ -26,8 +26,36 @@ for (i in 1:n){
 #null distribution
 hist(null_values)
 #p-value
-p_value <- sum(null_values > obs)/n
+p_value <- sum(abs(null_values) > obs)/n
 #p_value <- sum(abs(null_values) > obs)/n
 show(p_value)
 #probability distributions
 #normal distributions
+#clt
+#clt in practice
+library(rafalib)
+mypar()
+?mypar
+qqnorm(null_values)
+qqline(null_values)
+#t-test in practice
+control <- data[data$Diet =='chow',]$Bodyweight
+treatment <- data[data$Diet == 'hf',]$Bodyweight
+N <- length(treatment)
+se <- sqrt(var(treatment)/N+var(control)/N)
+tstat <- (mean(treatment)-mean(control))/se
+tstat
+2* (1 - pnorm(tstat))
+# t-test in practice
+library(dplyr)
+data <- read.csv('femaleMiceWeights.csv')
+control <- data[data$Diet =='chow',]$Bodyweight
+treatment <- data[data$Diet == 'hf',]$Bodyweight
+ttest <- t.test(treatment,control)
+ttest
+
+qqnorm(control)
+qqline(control)
+
+qqnorm(treatment)
+qqline(treatment)
