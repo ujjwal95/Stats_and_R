@@ -1,5 +1,7 @@
 install.packages('UsingR')
 library(UsingR)
+library(rafalib)
+library(dplyr)
 
 x <- father.son$fheight
 
@@ -44,4 +46,29 @@ x <- father.son$fheight
 y <- father.son$sheight
 #can show trends
 plot(x,y, xlab = "Father's height in inches", ylab = "Son's height in inches", main = paste("correlation= ", signif(cor(x,y),2)))
-     
+
+#------------ Stratify the data ---------------------------------#
+# we can split the data in boxplots by father's height as we have to predict the height of the 
+#father when the son's height is 72
+
+boxplot(split(y,round(x)))
+print(mean(y[round(x)==72]))
+
+#------------ Standardize the data ---------------------------------#
+
+#showing that data is correlated
+#finding z scores
+x <- (x-mean(x))/sd(x)
+y <- (y-mean(y))/sd(y)
+?tapply
+#find means of each factor after dividing data into quarters
+means <- tapply(y, round(x*4)/4,mean)
+fatherheights <- as.numeric(names(means))
+#plot it to show correlation
+#the slope of this linear line will be the correlation value
+plot(fatherheights, means, ylab = 'average of strata of sons heights', ylim = range(fatherheights))
+abline(0,cor(x,y))
+
+#------------ Log Ratios ---------------------------------#
+
+
